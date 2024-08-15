@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><span style="color: black;">Welcome, to my website..!</span></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #000000;
+        }
+        .photo-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .photo-container img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            border: 5px solid #4CAF50;
+        }
+        .collapsible {
+            background-image: url('collapsible-background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            margin-top: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .collapsible:hover {
+            background-color: #45a049;
+        }
+        .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-top: 10px;
+            border-radius: 5px;
+            padding: 0 18px;
+        }
+        .social {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-image: url('social-background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-top: 10px;
+            border-radius: 5px;
+            padding: 0 18px;
+        }
+        .biodata {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-image: url('biodata-background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-top: 10px;
+            border-radius: 5px;
+            padding: 0 18px;
+            background-color: lightblue
+        }
+        .content p, .content ul {
+            margin: 10px 0;
+        }
+        .content.show {
+            padding: 18px;
+        }
+        .game-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .game-item {
+            background-color: rgb(57, 190, 235);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 150px;
+        }
+        .game-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .social-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .social-item {
+            background-color: rgb(57, 190, 235);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 150px;
+        }
+        .social-item img {
+            width: 100%;
+            border-radius: 5px;
+    </style>
+</head>
+<body>
+
+    <h1>Welcome, to my website..!</h1>
+
+    <div class="photo-container">
+        <img src="Foto.jpg" alt="Your Photo">
+    </div>
+
+    <button class="collapsible">My Biodata</button>
+    <div class="biodata">
+        <p><strong>Name:</strong> Muhamad Tristan Farand</p>
+        <p><strong>Age:</strong> 19</p>
+        <p><strong>Gender:</strong> Male <span style="font-size: 15px; color: red;">(what did you expect?)</span></p>
+        <p><strong>Dreams:</strong> To become something to be proud of <span style="font-size: 15px; color: red;">(Also an RTX 4090)</span></p>
+        <p><strong>Religion:</strong> Islam</p>
+        <p><strong>Birthdate:</strong> 17 April 2005</p>
+        <p><strong>Email:</strong> Jeff146354@apps.ipb.ac.id <span style="font-size: 15px; color: red;">(i ain't you giving u my main account!)</span></p>
+        <p><strong>Phone Number:</strong> +62818661660</p>
+    </div>
+
+    <button class="collapsible">Games i currently play</button>
+    <div class="content">
+        <div class="game-list">
+            <div class="game-item">
+                <img src="game1.jpg" alt="Game 1">
+                <p><strong>Honkai Star Rail</strong> Jeff146354 <br>UID 809528798 <br>Asia</p>
+            </div>
+            <div class="game-item">
+                <img src="game2.jpg" alt="Game 2">
+                <p><strong>Genshin Impact</strong> Jeff146354 <br>UID 821191119 <br>Asia</p>
+            </div>
+            <div class="game-item">
+                <img src="game3.jpg" alt="Game 3">
+                <p><strong>Arknights</strong> Rosery#9173 <br>ID 21206329</p>
+            </div>
+            <div class="game-item">
+                <img src="game4.jpg" alt="Game 4">
+                <p><strong>Guardian Tales</strong> North America <br>Server 2 <br>Rainmaker</p>
+            </div>
+            <div class="game-item">
+                <img src="game5.jpg" alt="Game 5">
+                <p><strong>Roblox</strong> mynameisjeff146354</p>    
+            </div>
+            <p><strong><span style="font-size: 15px; color: red;">add me if thy dare</span> </p>
+
+            <!-- Add more games here -->
+        </div>
+    </div>
+    </div>
+
+    <button class="collapsible">Social Media </button>
+    <div class="social">
+        <div class="social-list">
+            <div class="social-item">
+                <img src="social1.jpg" alt="Social 1">
+                <p><strong>Discord</strong> <br> mynameisjeff146354</p>
+            </div>
+            <div class="social-item">
+                <img src="social2.jpg" alt="Social 2">
+                <p><strong>Instagram</strong> <br> mynameisjeff146354</p>
+            </div>
+            <div class="social-item">
+                <img src="social3.jpg" alt="Social 3">
+                <p><strong>Twitter (X) </strong> <br> You think i had one? <br> <span style="font-size: 20px; color: red;">Think again!</span></p>
+                </div>
+                <p><strong><span style="font-size: 15px; color: red;">i barely use it, so don't hope for anything :p</span> </p>
+
+    <script>
+        // Collapsible list function thingy
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+
+</body>
+</html>
